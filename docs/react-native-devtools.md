@@ -77,6 +77,24 @@ Breakpoints are a fundamental tool in your debugging toolkit!
 - Use a `debugger;` statement to quickly set a breakpoint from your text editor. This will reach the device immediately via Fast Refresh.
 - There are multiple kinds of breakpoints! For example, [Conditional Breakpoints and Logpoints](https://developer.chrome.com/docs/devtools/javascript/breakpoints#overview).
 
+### Memory profiling
+
+[TODO]
+
+[Record heap snapshots | Chrome DevTools](https://developer.chrome.com/docs/devtools/memory-problems/heap-snapshots)
+
+## React DevTools features
+
+In the integrated Components and Profiler panels, you'll find all the features of the React DevTools browser extension, which work seamlessly with React Native.
+
+### Components
+
+The React Components panel .
+
+It integrates with element highlighting and selection .
+
+![React DevTools Element Inspector integration](/docs/assets/debugging-element-inspector-react-devtools.gif)
+
 ## Reconnecting DevTools
 
 Occasionally, DevTools might disconnect from the target device. This can happen if:
