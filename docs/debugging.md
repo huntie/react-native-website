@@ -33,17 +33,10 @@ On first launch, DevTools will open to a welcome panel, along with an open conso
 
 ![React Native DevTools opened to the "Welcome" pane](/docs/assets/debugging-rndt-welcome.jpg)
 
-React Native DevTools is powered by a dedicated debugging architecture built into React Native and uses a customized build of the [Chrome DevTools](https://developer.chrome.com/docs/devtools) frontend. This enables us to offer familiar, browser-aligned debugging features that are deeply integrated and built for end-to-end reliability.
-
 Learn more in our [React Native DevTools guide](./react-native-devtools).
 
-:::note
-React Native DevTools is only available with the Hermes engine, and requires either Google Chrome or Microsoft Edge installed.
-:::
-
-:::info
-
-#### Flipper and alternative debugging tools
+<details>
+<summary>**💡 Flipper and alternative debugging tools**</summary>
 
 React Native DevTools replaces the previous Flipper, Experimental Debugger, and Hermes debugger (Chrome) frontends. If you are on an older version of React Native, please go to the docs [for your version](/versions).
 
@@ -55,7 +48,27 @@ Other useful links:
 
 - <a href="https://shift.infinite.red/why-you-dont-need-flipper-in-your-react-native-app-and-how-to-get-by-without-it-3af461955109" target="_blank">Why you don’t need Flipper in your React Native app … and how to get by without&nbsp;it&nbsp;↗</a>
 
-:::
+</details>
+
+## Viewing device logs
+
+<Tabs groupId="platform" queryString defaultValue={constants.defaultPlatform} values={constants.platforms} className="pill-tabs">
+<TabItem value="android">
+
+### Android device or simulator
+
+</TabItem>
+<TabItem value="ios">
+
+### iOS simulator
+
+```
+xcrun simctl spawn booted log stream --level debug --style compact --predicate 'process=="RNTesterIOS" && subsyste
+m=="com.facebook.react.log"'
+```
+
+</TabItem>
+</Tabs>
 
 ## LogBox
 
