@@ -86,6 +86,8 @@ Agent-driven upgrades can make use of the [**/migrate-to-strict-api**](https://w
 
 We understand that not every app or library will be able to migrate right away — with this in mind, we're maintaining a user opt-out switch.
 
+The opt-out is a temporary bridge: it remains **available through React Native 0.88**, and we intend to remove the legacy TypeScript types in the following release.
+
 <details>
 <summary>**Strict API: Opting out**</summary>
 
@@ -106,7 +108,14 @@ To temporarily revert to the previous types, add the `"react-native-legacy-deep-
 
 </details>
 
-The opt-out is a temporary bridge: it remains **available through React Native 0.88**, and we intend to remove the legacy TypeScript types in the following release.
+<details>
+<summary>**Strict API: Further reading and FAQs**</summary>
+
+- [FAQs](/docs/strict-typescript-api#faqs) — answers to common questions, including whether this affects runtime, library authors' migration timing, and why the manual types were replaced.
+- [Moving Towards a Stable JavaScript API](/blog/2025/06/12/moving-towards-a-stable-javascript-api) — our original rationale for this migration, from the 0.80 preview announcement.
+- [Watch the talk](https://www.youtube.com/live/UTaJlqhTk2g?si=SDRmj80kss7hXuGG&t=6520) — a deep dive into our motivations and the work behind the Strict TypeScript API, from **App.js 2025**.
+
+</details>
 
 ### Swift Package Manager & prebuilt dependencies (iOS)
 
